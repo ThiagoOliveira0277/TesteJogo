@@ -1,0 +1,46 @@
+public class Jogadores {
+    public String nome;
+    public int finalizacao;
+    public int forca;
+    public int passe;
+    
+    public Jogadores(String nome, int _finalizacao, int _forca, int _passe){
+        this(finalizacao, forca, passe);
+        this.nome = nome;
+        
+    }
+     public Jogadores(int _finalizacao, int _forca, int _passe){
+        if (finalizacao >= 0 && finalizacao <= 10)
+            this.finalizacao = finalizacao;
+        if (forca >= 0 && forca <= 10)
+            this.forca = forca;
+        if (passe >= 0 && passe <= 10)
+            this.passe = passe;
+    }
+    
+    public boolean chute (){
+       if(finalizacao > 5){
+           if(forca > 3){
+             System.out.print("O jogador fez o gol ");      
+                   }
+           
+       }else{
+           System.out.print("O jogador não fez o gol ");
+       }
+        return true;
+        
+       
+    }
+    public boolean tocar (){
+       if(passe > 4){
+           if(forca > 2){
+             System.out.print("O jogador acertou o passe ");      
+                   }
+       
+       }else{
+           System.out.print("O jogador errou o passe ");
+       }
+        return true;
+    
+    }
+}
