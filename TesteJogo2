@@ -1,0 +1,9 @@
+public class Jogo {
+    public static void main(String[] args) {
+        Jogadores craque = new Jogadores();
+        Jogadores craque2 = new Jogadores("RenatoAugusto" 10, 9, 9 );
+        
+       
+    }
+    
+}
